@@ -55,7 +55,7 @@ network_policy:
 conf:
   glance:
     DEFAULT:
-      workers: 2
+      workers: 8
       # NOTE(cloudnull): This option is required when using the new glance multi-backend feature.
       #                  The example below is for the rxt_swift backend, but could easily be used
       #                  for other backends.
@@ -91,7 +91,7 @@ conf:
       connection_recycle_time: 600
       connection_trace: true
       idle_timeout: 3600
-      mysql_sql_mode: ""
+      mysql_sql_mode: {}
       use_db_reconnect: true
       pool_timeout: 60
       max_retries: -1
